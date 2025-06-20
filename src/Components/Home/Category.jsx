@@ -1,105 +1,148 @@
 import React from "react";
 import tab from "../images/tab.png";
-import heart from '../images/heart.png'
-import heartbeat from '../images/heartbeat.png'
-import kit from '../images/kit.png'
-import leaf from '../images/leaf.png'
-import simple from '../images/simple.png'
-import senatizer from '../images/senatizer.png'
-import shopping from '../images/bag-shopping.png'
+import heart from "../images/heart.png";
+import heartbeat from "../images/heartbeat.png";
+import kit from "../images/kit.png";
+import leaf from "../images/leaf.png";
+import simple from "../images/simple.png";
+import senatizer from "../images/senatizer.png";
+import shopping from "../images/bag-shopping.png";
+import eye from '../images/eye.png';
+import facewash from '../images/shampoo.png'
+import mask from '../images/mask.png'
+
+const categories = [
+  {
+    title: "Medicine",
+    items: 32,
+    icon: tab,
+  },
+  {
+    title: "Health Care",
+    items: 20,
+    icon: heart,
+  },
+  {
+    title: "Beauty Care",
+    items: 30,
+    icon: leaf,
+  },
+  {
+    title: "Fitness",
+    items: 35,
+    icon: heartbeat,
+  },
+  {
+    title: "Lab Equipment",
+    items: 25,
+    icon: simple,
+    textSize: "text-base", // optional customization
+  },
+  {
+    title: "Madkits",
+    items: 25,
+    icon: kit,
+  },
+];
+
+const products = [
+  {
+    name : "Sanitizer",
+    detail: "Hand Sanitizer Collection",
+    icon : shopping,
+    button : "Shop Now",
+    image : senatizer
+  },
+   {
+    name : "Top Deal",
+    detail: "Face Wash Sale Collection",
+    icon : eye,
+    button : "Discover Now",
+    image : facewash
+  },
+   {
+    name : "Face Mask",
+    detail: "Facial mask deals save up to 50%",
+    icon : eye,
+    button : "Discover Now",
+    image : mask
+  }
+]
 
 const Category = () => {
   return (
-    <section className="bg-[#EBE9E0] text-[#503017] w-full h-full px-4 py-4 md:px-12 relative md:flex md:justify-center">
-      <div className=" w-full lg:w-[80vw] px-4 py-4 lg:px-12 relative md:flex justify-center">
-        <div className="flex items-center flex-col h-screen justify-around">
-          <div className="">
-            <p className="text-4xl font-bold font-poppins">Shop by Category</p>
-          </div>
-
-          <div className="flex gap-3">
-
-            <div className="flex flex-wrap gap-4 justify-center">
-              <div className="p-3 w-full sm:w-[48%] md:w-[30%] lg:w-[160px] h-[215px] flex flex-col justify-center items-center rounded-xl shadow-2xl gap-3">
-                <img src={tab} alt="tab-icon" className="w-[115px] h-[115px]" />
-                <div className="flex flex-col items-center">
-                  <h5 className="font-bold text-xl">Medicine</h5>
-                  <p>32 items</p>
-                </div>
-              </div>
-
-              <div className="p-3 w-full sm:w-[48%] md:w-[30%] lg:w-[160px] h-[215px] flex flex-col justify-center items-center rounded-xl shadow-2xl gap-3">
-                <img src={heart} alt="Heart icon" className="w-[115px] h-[115px]" />
-                <div className="flex flex-col items-center">
-                  <h5 className="font-bold text-xl">Health Care</h5>
-                  <p>20 items</p>
-                </div>
-              </div>
-
-              <div className="p-3 w-full sm:w-[48%] md:w-[30%] lg:w-[160px] h-[215px] flex flex-col justify-center items-center rounded-xl shadow-2xl gap-3">
-                <img src={leaf} alt="leaf-icon" className="w-[115px] h-[115px]" />
-                <div className="flex flex-col items-center">
-                  <h5 className="font-bold text-xl">Beauty Care</h5>
-                  <p>30 items</p>
-                </div>
-              </div>
-
-              <div className="p-3 w-full sm:w-[48%] md:w-[30%] lg:w-[160px] h-[215px] flex flex-col justify-center items-center rounded-xl shadow-2xl gap-3">
-                <img src={heartbeat} alt="heartbeat-icon" className="w-[115px] h-[115px]" />
-                <div className="flex flex-col items-center">
-                  <h5 className="font-bold text-xl">Fitness</h5>
-                  <p>35 items</p>
-                </div>
-              </div>
-
-              <div className="p-3 w-full sm:w-[48%] md:w-[30%] lg:w-[160px] h-[215px] flex flex-col justify-center items-center rounded-xl shadow-2xl gap-3">
-                <img src={simple} alt="simple-icon" className="w-[115px] h-[115px]" />
-                <div className="flex flex-col items-center">
-                  <h5 className="font-bold text-base">Lab Equipment</h5>
-                  <p>25 items</p>
-                </div>
-              </div>
-
-              <div className="p-3 w-full sm:w-[48%] md:w-[30%] lg:w-[160px] h-[215px] flex flex-col justify-center items-center rounded-xl shadow-2xl gap-3">
-                <img src={kit} alt="kit-icon" className="w-[115px] h-[115px]" />
-                <div className="flex flex-col items-center">
-                  <h5 className="font-bold text-xl">Madkits</h5>
-                  <p>25 items</p>
-                </div>
-              </div>
-              {/* Repeat for other cards */}
-            </div>
-          </div>
-
-          <div className="">
-
-            <div className=" w-[380px] h-[230px] bg-amber-300 flex">
-              <div className="flex flex-col justify-around m-2">
-                <div className="">
-                  <button>Sanitizer</button>
-                </div>
-                <div className="">
-                  <p className="text-3xl">Hand Sanitizer Collection</p>
-                  <button>
-                    <img src={shopping} alt=" bag" />
-                    Shop Now
-                  </button>
-                </div>
-              </div>
-
-              <div className="">
-                <img src= {senatizer} alt="" />
-              </div>
-
-            </div>
-
-          </div>
-
-
-
-        </div>
+    <section className="bg-[#EBE9E0] text-[#503017] w-full px-4 py-4 md:px-12">
+  <div className="w-full lg:w-[80vw] px-4 py-4 lg:px-12 mx-auto">
+    <div className="flex flex-col items-center gap-y-10">
+      {/* Title */}
+      <div>
+        <p className="text-4xl font-bold font-poppins text-center">
+          Shop by Category
+        </p>
       </div>
-    </section>
+
+      {/* Category Cards */}
+      <div className="flex flex-wrap gap-4 justify-center  p-4 rounded-xl">
+        {categories.map((category, index) => (
+          <div
+            key={index}
+            className="p-3 w-full sm:w-[48%] md:w-[30%] lg:w-[160px] h-[215px] flex flex-col justify-center items-center rounded-xl shadow-2xl gap-3 bg-[#F2F2F2]"
+          >
+            <img
+              src={category.icon}
+              alt={`${category.title}-icon`}
+              className="w-[115px] h-[115px]"
+            />
+            <div className="flex flex-col items-center">
+              <h5 className={`font-bold ${category.textSize || "text-xl"}`}>
+                {category.title}
+              </h5>
+              <p>{category.items} items</p>
+            </div>
+          </div>
+        ))}
+      </div>
+
+      {/* Product Cards */}
+      <div className="flex flex-wrap gap-6 justify-center">
+        {products.map((product, index) => (
+          <div
+            key={index}
+            className=" w-full sm:w-[340px] h-auto sm:h-[230px] rounded-xl shadow-2xl bg-[#F2F2F2] flex sm:flex-row overflow-hidden"
+          >
+            <div className="flex flex-col justify-around p-4 sm:w-1/2 gap-4">
+              <div className="bg-[#D3744A] text-white w-fit rounded-2xl px-4 py-1">
+                <button>{product.name}</button>
+              </div>
+              <div className="flex flex-col gap-2">
+                <p className="text-xl">{product.detail}</p>
+                <button className="w-fit">
+                  <span className="inline-flex items-center border-b-2 border-black">
+                    <img
+                      src={product.icon}
+                      alt="icon"
+                      className="w-5 h-5 mr-2"
+                    />
+                    <span>{product.button}</span>
+                  </span>
+                </button>
+              </div>
+            </div>
+
+            <div className="sm:w-1/2 flex justify-center items-center p-4">
+              <img
+                src={product.image}
+                alt=""
+                className="w-[143px] h-[175px] object-contain"
+              />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  </div>
+</section>
+
   );
 };
 
