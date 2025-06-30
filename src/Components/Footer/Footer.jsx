@@ -11,12 +11,12 @@ import phone from "../images/phone.png";
 
 const Footer = () => {
   return (
-    <section className="bg-[#E2DFCF] text-[#503017] w-full px-4 py-8 md:px-12">
+    <section className="bg-[#F2F2F2]  text-[#503017] w-full px-4 py-8 md:py-14 md:px-12">
       <div className="w-full max-w-[1200px] mx-auto flex flex-col gap-10">
         {/* Footer Columns */}
-        <div className="flex flex-wrap gap-y-10">
+        <div className="flex  flex-wrap gap-y-10">
           {/* Column 1 */}
-          <div className="w-full sm:w-1/2 lg:w-2/12 px-2 min-w-0">
+          <div className="text-center sm:text-left w-full sm:w-1/2 lg:w-2/12 px-2 min-w-0">
             <h3 className="font-bold text-xl mb-4">Pages</h3>
             <ul className="space-y-2 text-base">
               <li><Link to="/">Home</Link></li>
@@ -30,7 +30,7 @@ const Footer = () => {
           </div>
 
           {/* Column 2 */}
-          <div className="w-full sm:w-1/2 lg:w-2/12 px-2 min-w-0">
+          <div className="text-center sm:text-left w-full sm:w-1/2 lg:w-2/12 px-2 min-w-0">
             <h3 className="font-bold text-xl mb-4">Utilities</h3>
             <ul className="space-y-2 text-base">
               <li><Link to="/">Style Guide</Link></li>
