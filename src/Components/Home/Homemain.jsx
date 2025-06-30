@@ -2,6 +2,7 @@ import React from 'react'
 import Home from './Home'
 import Category from './Category'
 import Latestproduct from './Latestproduct'
+import StoreCollection from './StoreCollection'
 
 const Homemain = () => {
   return (
@@ -9,6 +10,7 @@ const Homemain = () => {
         <Home />
         <Category />
         <Latestproduct />
+        <StoreCollection />        
       
     </div>
   )

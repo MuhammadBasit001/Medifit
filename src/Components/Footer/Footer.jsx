@@ -11,7 +11,7 @@ import phone from "../images/phone.png";
 
 const Footer = () => {
   return (
-    <section className="bg-[#EBE9E0] text-[#503017] w-full px-4 py-8 md:px-12">
+    <section className="bg-[#E2DFCF] text-[#503017] w-full px-4 py-8 md:px-12">
       <div className="w-full max-w-[1200px] mx-auto flex flex-col gap-10">
         {/* Footer Columns */}
         <div className="flex flex-wrap gap-y-10">
@@ -44,9 +44,9 @@ const Footer = () => {
           </div>
 
           {/* Column 3 */}
-          <div className="w-full sm:w-1/2 lg:w-5/12 px-2 min-w-0 flex flex-col items-center text-center">
+          <div className="w-full sm:w-1/2 lg:w-5/12 px-2 min-w-0 flex flex-col items-center justify-center text-center">
             <img src={logo} alt="Company Logo" className="w-[160px] mb-4" />
-            <p className="text-sm mb-4">
+            <p className="text-sm mb-4 lg:px-32">
               We provide the ultimate solution for your online store and all the healthcare needs.
             </p>
             <div className="flex gap-4">
@@ -58,7 +58,7 @@ const Footer = () => {
           </div>
 
           {/* Column 4 */}
-          <div className="w-full sm:w-1/2 lg:w-3/12 px-2 min-w-0 flex flex-col gap-6">
+          <div className="w-full sm:w-1/2 lg:w-3/12 px-2 min-w-0 flex justify-around flex-col gap-6">
             <div>
               <h2 className="font-bold text-xl mb-2">Address</h2>
               <div className="flex items-start gap-2">
