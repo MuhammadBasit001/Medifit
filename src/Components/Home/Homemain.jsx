@@ -4,6 +4,8 @@ import Category from './Category'
 import Latestproduct from './Latestproduct'
 import StoreCollection from './StoreCollection'
 import Discount from './Discount'
+import ImageSlider from './ImageSlider'
+import Feedback from './Feedback'
 
 const Homemain = () => {
   return (
@@ -12,7 +14,8 @@ const Homemain = () => {
         <Category />
         <Latestproduct />
         <StoreCollection />    
-        <Discount />    
+        <Discount />   
+        <Feedback />
       
     </div>
   )
