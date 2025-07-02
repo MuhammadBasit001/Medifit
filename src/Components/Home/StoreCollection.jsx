@@ -68,7 +68,7 @@ const StoreCollection = () => {
         <h2 className="text-2xl md:text-4xl font-bold text-center text-[#4C2B17] mb-10">
           Explore Our store Collection
         </h2>
-        <div className="grid grid-cols-1  md:w-full p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid md:w-full p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
             <div
               key={index}

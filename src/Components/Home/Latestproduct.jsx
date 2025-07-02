@@ -46,7 +46,7 @@ const Latestproduct = () => {
       <div className="w-full max-w-[1200px] mx-auto flex flex-col items-center gap-10">
         {/* Title */}
         <div>
-          <p className="text-4xl font-bold font-poppins text-center">
+          <p className="text-2xl md:text-4xl font-bold font-poppins text-center">
             Latest Health Product
           </p>
         </div>

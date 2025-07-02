@@ -36,12 +36,13 @@ export default function Feedback() {
   const active = testimonials[activeIndex];
 
   return (
-    <section className="bg-[#f9f8f3] py-12 px-4 text-center">
-      <h2 className="text-3xl font-semibold text-[#4a2c18] mb-10">Our happy clients</h2>
+    <section className="bg-[#EBE9E0] py-12 w-full  px-4 text-center">
+      <div className="w-full max-w-[1200px] mx-auto flex flex-col  items-center gap-10">
+      <h2 className="text-2xl text-[#503017] md:text-4xl font-bold font-poppins text-center">Our happy clients</h2>
 
-      <div className="bg-white max-w-3xl mx-auto p-6 rounded-lg shadow text-sm text-gray-600 mb-10">
-        <div className="text-5xl text-gray-300 mb-4">&ldquo;</div>
-        <p className="leading-relaxed">{active.quote}</p>
+      <div className="bg-white max-w-full mx-auto p-6 rounded-lg shadow text-sm text-gray-600 mb-10">
+        <div className="text-5xl  text-gray-300 mb-4">&ldquo;</div>
+        <p className="leading-relaxed text-2xl">{active.quote}</p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-4">
@@ -56,14 +57,15 @@ export default function Feedback() {
             <img
               src={user.image}
               alt={user.name}
-              className="w-10 h-10 rounded-full object-cover"
+              className="w-20 h-20 rounded-full object-cover"
             />
             <div className="text-left">
-              <p className="text-sm font-semibold">{user.name}</p>
-              <p className="text-xs text-gray-500">{user.role}</p>
+              <p className="text-md font-semibold">{user.name}</p>
+              <p className="text-sm text-gray-500">{user.role}</p>
             </div>
           </button>
         ))}
+      </div>
       </div>
     </section>
   );
