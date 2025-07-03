@@ -23,7 +23,8 @@ const Header = () => {
           <div className="hidden md:flex gap-6 text-lg absolute left-1/2 -translate-x-1/2">
             <Link to="/">Home</Link>
             <Link to="/shop">Shop</Link>
-            <Link to="/about">Pages</Link>
+            <Link to="/pages">Pages</Link>
+            <Link to="/about">About</Link>
             <Link to="/contact">Contact</Link>
           </div>
 
@@ -59,6 +60,7 @@ const Header = () => {
         >
           <Link to="/" onClick={() => setMenuOpen(false)}>Home</Link>
           <Link to="/shop" onClick={() => setMenuOpen(false)}>Shop</Link>
+          <Link to="/pages" onClick={() => setMenuOpen(false)}>Pages</Link>
           <Link to="/about" onClick={() => setMenuOpen(false)}>Pages</Link>
           <Link to="/contact" onClick={() => setMenuOpen(false)}>Contact</Link>
 
