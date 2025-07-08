@@ -1,6 +1,7 @@
 import React from 'react'
 import ContactUs from './ContactUS'
 import FAQSection from './FaqSection'
+import ProductCommunity from './ProductCommunity'
 
 const Contact = () => {
   return (
@@ -8,6 +9,7 @@ const Contact = () => {
     <div>   
         <ContactUs />
         <FAQSection />
+        <ProductCommunity />
     </div>
    </section> 
   )
