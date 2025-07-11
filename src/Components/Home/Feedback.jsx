@@ -42,7 +42,7 @@ export default function Feedback() {
 
       <div className="bg-white max-w-[80%] mx-auto p-6 rounded-lg shadow text-sm text-gray-600 mb-10">
         <div className="text-5xl  text-gray-300 mb-4">&ldquo;</div>
-        <p className="leading-relaxed text-2xl">{active.quote}</p>
+        <p className="leading-relaxed text-md sm:text-xl">{active.quote}</p>
       </div>
 
       <div className="flex flex-wrap justify-center gap-4">

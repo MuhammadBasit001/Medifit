@@ -64,11 +64,11 @@ const products = [
 const StoreCollection = () => {
   return (
     <section className="bg-[#EBE9E0] text-[#503017] w-full sm:px-4 py-8 md:px-12">
-      <div className="w-full max-w-[1200px] mx-auto flex flex-col  items-center gap-10">
-        <h2 className="text-2xl md:text-4xl font-bold text-center text-[#4C2B17] mb-10">
+      <div className="w-full max-w-[1200px] mx-auto flex flex-col  items-center ">
+        <h2 className="text-2xl  py-4 md:text-4xl font-bold text-center text-[#4C2B17] mb-10">
           Explore Our store Collection
         </h2>
-        <div className="grid md:w-full p-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+        <div className="grid md:w-full p-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           {products.map((product, index) => (
             <div
               key={index}
